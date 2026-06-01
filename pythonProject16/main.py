@@ -26,8 +26,8 @@ supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 app = FastAPI()
 app.add_middleware(SessionMiddleware, secret_key=SESSION_SECRET)
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory="pythonProject16/static"), name="static")
+templates = Jinja2Templates(directory="pythonProject16/templates")
 
 
 # -------------------- HELPERS --------------------

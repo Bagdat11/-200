@@ -1,8 +1,7 @@
-fastapi~=0.115.0
+fastapi
 uvicorn
-python-dotenv~=1.2.2
+python-dotenv
 jinja2
 python-multipart
 itsdangerous
-supabase~=2.6.0
-starlette~=0.49.1
+supabase

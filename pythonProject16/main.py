@@ -110,7 +110,7 @@ def home():
 
 @app.get("/student-login", response_class=HTMLResponse)
 def student_login_page(request: Request, msg: str = ""):
-    return templates.TemplateResponse("student_login.html", {"request": request, "msg": msg})
+    return templates.TemplateResponse("student_login.html", {"request": request})
 
 
 @app.post("/student-login")
